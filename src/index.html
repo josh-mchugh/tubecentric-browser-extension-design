@@ -1,0 +1,322 @@
+<html>
+    <header>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/index.css">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </header>
+    <body>
+      <div class="container mock">
+
+        <div class="tc">
+          <div class="tc-logo">
+            <img class="tc-logo__img" src="./assets/logo-icon.svg"/>
+          </div>
+          <div class="tc-widget">
+            <div class="tc-widget__search">
+              <input class="form-control tc-search-form__form-control" placeholder="Search Keywords"/>
+              <button class="btn button--primary" id="searchBtn" type="button">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tc-modal" tabindex="-1">
+        <div class="tc-modal-content">
+          <div class="tc-modal-header">
+            <div class="tc-modal-header__logo">
+              <img src="./assets/logo-icon.svg"/>
+            </div>
+            <div class="tc-modal-header__title">Search Keywords</div>
+            <span class="tc-modal-header__close">&times;</span>
+          </div>
+          <div class="tc-modal-body">
+
+
+            <div class="tc-tabs">
+              <div class="tc-tabs__header">
+                <div class="tc-tab tc-tab--active" data-tab="search">Search</div>
+                <div class="tc-tab" data-tab="trending">Trending</div>
+              </div>
+              <div class="tc-tabs__content tc-tabs__content--active" data-tab-content="search">
+                <div class="tc-search-form">
+                  <div class="input-group">
+                    <input class="form-control" placeholder="Search"/>
+                    <div class="input-group-append">
+                      <button class="btn button--primary">Search</button>
+                    </div>
+                  </div>
+                </div>
+                 <div class="tc-search-list">
+                   <div class="tc-search-list__item">
+                     <div class="tc-search-item-title">
+                      <span class="tc-search-item-title__highlight">snapchat</span> download
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__guage">
+                         <div class="tc-search-item-gauge">
+                           <div class="tc-search-item-guage__meter" style="width:75%;"></div>
+                         </div>
+                       </div>
+                       <div class="tc-search-item-container__rating">
+                         <div class="tc-search-item-rating">75</div>
+                       </div>
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__button">
+                          <button class="btn button--primary tc-search-item-button">Add</button>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="tc-search-list__item">
+                     <div class="tc-search-item-title">
+                       <span class="tc-search-item-title__highlight">snapchat</span> download data
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__guage">
+                         <div class="tc-search-item-gauge">
+                           <div class="tc-search-item-guage__meter" style="width:50%;"></div>
+                         </div>
+                       </div>
+                       <div class="tc-search-item-container__rating">
+                         <div class="tc-search-item-rating">50</div>
+                       </div>
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__button">
+                          <button class="btn button--primary tc-search-item-button">Remove</button>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="tc-search-list__item">
+                     <div class="tc-search-item-title">
+                       <span class="tc-search-item-title__highlight">snapchat</span> download link
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__guage">
+                         <div class="tc-search-item-gauge">
+                           <div class="tc-search-item-guage__meter" style="width:25%;"></div>
+                         </div>
+                       </div>
+                       <div class="tc-search-item-container__rating">
+                         <div class="tc-search-item-rating">25</div>
+                       </div>
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__button">
+                          <button class="btn button--primary tc-search-item-button">Remove</button>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="tc-search-list__item">
+                     <div class="tc-search-item-title">
+                       <span class="tc-search-item-title__highlight">snapchat</span> download samsung
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__guage">
+                         <div class="tc-search-item-gauge">
+                           <div class="tc-search-item-guage__meter" style="width:33%;"></div>
+                         </div>
+                       </div>
+                       <div class="tc-search-item-container__rating">
+                         <div class="tc-search-item-rating">33</div>
+                       </div>
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__button">
+                          <button class="btn button--primary tc-search-item-button">Add</button>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="tc-search-list__item">
+                     <div class="tc-search-item-title">
+                       <span class="tc-search-item-title__highlight">snapchat</span> download karne ka tarika
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__guage">
+                         <div class="tc-search-item-gauge">
+                           <div class="tc-search-item-guage__meter" style="width:86%;"></div>
+                         </div>
+                       </div>
+                       <div class="tc-search-item-container__rating">
+                         <div class="tc-search-item-rating">86</div>
+                       </div>
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__button">
+                          <button class="btn button--primary tc-search-item-button">Add</button>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="tc-search-list__item">
+                     <div class="tc-search-item-title">
+                       <span class="tc-search-item-title__highlight">snapchat</span> download my data
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__guage">
+                         <div class="tc-search-item-gauge">
+                           <div class="tc-search-item-guage__meter" style="width:37%;"></div>
+                         </div>
+                       </div>
+                       <div class="tc-search-item-container__rating">
+                         <div class="tc-search-item-rating">37</div>
+                       </div>
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__button">
+                          <button class="btn button--primary tc-search-item-button">Add</button>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="tc-search-list__item">
+                     <div class="tc-search-item-title">
+                       <span class="tc-search-item-title__highlight">snapchat</span> download pc
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__guage">
+                         <div class="tc-search-item-gauge">
+                           <div class="tc-search-item-guage__meter" style="width:67%;"></div>
+                         </div>
+                       </div>
+                       <div class="tc-search-item-container__rating">
+                         <div class="tc-search-item-rating">67</div>
+                       </div>
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__button">
+                          <button class="btn button--primary tc-search-item-button">Add</button>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="tc-search-list__item">
+                     <div class="tc-search-item-title">
+                       <span class="tc-search-item-title__highlight">snapchat</span> download video
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__guage">
+                         <div class="tc-search-item-gauge">
+                           <div class="tc-search-item-guage__meter" style="width:97%;"></div>
+                         </div>
+                       </div>
+                       <div class="tc-search-item-container__rating">
+                         <div class="tc-search-item-rating">97</div>
+                       </div>
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__button">
+                          <button class="btn button--primary tc-search-item-button">Add</button>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="tc-search-list__item">
+                     <div class="tc-search-item-title">
+                       <span class="tc-search-item-title__highlight">snapchat</span> download apk
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__guage">
+                         <div class="tc-search-item-gauge">
+                           <div class="tc-search-item-guage__meter" style="width:100%;"></div>
+                         </div>
+                       </div>
+                       <div class="tc-search-item-container__rating">
+                         <div class="tc-search-item-rating">100</div>
+                       </div>
+                     </div>
+                     <div class="tc-search-item-container">
+                       <div class="tc-search-item-container__button">
+                          <button class="btn button--primary tc-search-item-button">Add</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              </div>
+              <div class="tc-tabs__content" data-tab-content="trending">
+                <div class="tc-search-list">
+                  <div class="tc-search-list__item">
+                    <div class="tc-search-item-title">Snapchat down</div>
+                    <div class="tc-search-item-container">
+                      <div class="tc-search-item-container__button">
+                         <button class="btn button--primary">Add</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tc-search-list__item">
+                    <div class="tc-search-item-title">Passover</div>
+                    <div class="tc-search-item-container">
+                      <div class="tc-search-item-container__button">
+                         <button class="btn button--primary">Add</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tc-search-list__item">
+                    <div class="tc-search-item-title">Amber Heard</div>
+                    <div class="tc-search-item-container">
+                      <div class="tc-search-item-container__button">
+                         <button class="btn button--primary">Add</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tc-search-list__item">
+                    <div class="tc-search-item-title">IRS Enconomic stmulus checks</div>
+                    <div class="tc-search-item-container">
+                      <div class="tc-search-item-container__button">
+                         <button class="btn button--primary">Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="tc-modal-footer">
+            <button class="btn button--secondary" type="button">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <script>
+
+        //tabs
+        $(function() {
+          $(".tc-tab").on("click", function() {
+
+            var active = $(".tc-tab--active");
+            $(active).removeClass("tc-tab--active");
+            $(".tc-tabs__content--active").removeClass("tc-tabs__content--active");
+
+            $(this).addClass("tc-tab--active");
+            $("[data-tab-content='" + $(this).attr("data-tab") + "']").addClass("tc-tabs__content--active");
+          })
+        });
+
+        // Modal
+        $(function() {
+
+          $(".tc-modal").toggle();
+
+          $("#searchBtn").on("click", function() {
+
+            $(".tc-modal").toggle();
+
+          });
+
+          $(".tc-modal-footer .btn.button--secondary").on("click", function() {
+
+            $(".tc-modal").toggle();
+          });
+
+          $(".tc-modal-header__close").on("click", function() {
+
+            $(".tc-modal").toggle();
+          });
+
+        });
+      </script>
+    </body>
+</html>

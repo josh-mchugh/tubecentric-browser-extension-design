@@ -1,0 +1,251 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./_colors.scss";
+
+.button--primary {
+  @include button-variant($primary, $primaryLight, $primaryDark);
+}
+
+.button--secondary {
+  @include button-variant($gray600, $gray400, $gray800);
+}
+
+.mock {
+  margin-top: 100px;
+  max-width: 640px;
+}
+
+.tc {
+  font-family: 'Roboto', 'Noto', sans-serif;
+}
+
+.tc-logo {
+  position: relative;
+}
+
+.tc-logo__img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 17px;
+  height: 17px;
+}
+
+.tc-widget {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.tc-widget__search {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 20px 0;
+  padding: 0 42px 20px 25px;
+}
+
+.tc-modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding-top: 100px;
+  z-index: 9999;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tc-modal-content {
+  position: relative;
+  width: 680px;
+  margin: auto;
+  padding: 0;
+  background-color: $white;
+  border: 1px solid $gray400;
+  border-radius: 12px;
+  box-shadow: 0 0px 8px rbga(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tc-modal-header {
+  padding: 15px 15px 15px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tc-modal-header__logo {
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    margin: 0px 0 0 10px;
+  }
+}
+
+.tc-modal-header__title {
+  margin-left: 60px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: $gray600;
+}
+
+.tc-modal-header__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 15px 0 15px;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  color: $gray600;
+
+  &:hover, :focus {
+    color: $gray800;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.tc-modal-body {
+  min-height: 200px;
+}
+
+.tc-modal-footer {
+  display: flex;
+  flex-flow: row-reverse;
+  padding: 15px 15px 20px 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tc-tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tc-tabs__header {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+
+  :nth-child(even) {
+    border-left: 1px solid $gray200;
+  }
+}
+
+.tc-tab {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0 10px 0;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $gray600;
+  cursor: pointer;
+  background-color: $gray100;
+}
+
+.tc-tab--active {
+  background-color: $white;
+  font-weight: 500;
+  color: $gray800;
+}
+
+.tc-tabs__content {
+  display: none;
+  width: 100%;
+  min-height: 550px;
+  padding: 1em;
+  background: $white;
+}
+
+.tc-tabs__content--active {
+  display: block;
+}
+
+.tc-search-form {
+  display: flex;
+  margin: 20px 23%;
+}
+
+.tc-search-list {
+  max-height: 400px;
+  margin: 20px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.tc-search-list__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+
+  &:nth-child(odd) {
+    background-color: $gray100;
+  }
+}
+
+.tc-search-item-title {
+  width: 100%;
+  height: 3rem;
+  margin-left: 15px;
+  line-height: 3rem;
+  text-align: left;
+  color: $gray900;
+}
+
+.tc-search-item-title__highlight {
+  font-weight: bold;
+}
+
+.tc-search-item-container {
+  display: flex;
+  margin: 0 20px;
+}
+
+.tc-search-item-container__rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tc-search-item-container__guage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tc-search-item-gauge {
+  width: 120px;
+  height: 15px;
+  background-color: $gray300 !important;
+}
+
+.tc-search-item-guage__meter {
+  height: 15px;
+  background-color: $primaryLight !important;
+}
+
+.tc-search-item-rating {
+  padding-left: 5px;
+  color: $gray600;
+  font-weight: 500;
+}
+
+.tc-search-item-container__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 15px;
+  min-width: 82px;
+}
+
+.tc-search-item-button {
+  height: 38px;
+  width: 82px;
+}
